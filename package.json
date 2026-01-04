@@ -1,0 +1,58 @@
+{
+    "name": "hero-sms",
+    "version": "1.0.0",
+    "description": "TypeScript library for HeroSMS SMS activation service",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.js",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "prepublishOnly": "npm run build && npm test"
+    },
+    "keywords": [
+        "sms",
+        "activation",
+        "herosms",
+        "sms-activate",
+        "phone",
+        "verification",
+        "otp",
+        "virtual-number"
+    ],
+    "author": "osyduck",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/osyduck/Hero-SMS"
+    },
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "dependencies": {
+        "axios": "^1.6.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "tsx": "^4.21.0",
+        "typescript": "^5.3.0",
+        "vitest": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
